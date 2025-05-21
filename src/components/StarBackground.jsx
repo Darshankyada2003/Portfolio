@@ -54,7 +54,7 @@ const StarBackground = () => {
                 x: Math.random() * 100,
                 y: Math.random() * 20,
                 delay: Math.random() * 15,
-                animationDuration: Math.random() * 3 + 3,
+                animationDuration: Math.random() * 4 + 5,
             })
         }
         setMeteors(newMeteors);
@@ -77,6 +77,7 @@ const StarBackground = () => {
             {meteors.map((meteor) => (
                 <div key={meteor.id} className='meteor animate-meteor'
                     style={{
+                        animation: 'meteor 8s linear infinite',
                         width: meteor.size * 40 + 'px',
                         height: meteor.size * 2 + 'px',
                         left: meteor.x + '%',
