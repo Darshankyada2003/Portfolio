@@ -8,7 +8,7 @@ const projects = [
         description: 'A responsive Netflix clone built with React.js, featuring smooth UI and dynamic content from a movie API.',
         image: './public/Image_Project/netflix-clone.png',
         tags: ['React.js', 'JavaScript', 'HTML', 'Css', 'Bootstrap'],
-        demoURL: '#',
+        demoURL: '',
         githubURL: 'https://github.com/Darshankyada2003/netfilx-clone'
     },
     // {
@@ -26,7 +26,7 @@ const projects = [
         description: 'Built a pixel-perfect responsive webpage from Figma using React.js, Tailwind CSS, and a scalable component-based architecture.',
         image: './public/Image_Project/figmaDesign.png',
         tags: ['React.js', 'JavaScript', 'HTML', 'Tailwind CSS', 'Bootstrap'],
-        demoURL: '#',
+        demoURL: '',
         githubURL: 'https://github.com/Darshankyada2003/FigmaDesign'
     },
     {
