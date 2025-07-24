@@ -1,12 +1,16 @@
 import { ArrowRight, ExternalLink, Github } from 'lucide-react'
 import React from 'react'
 
+import boat from '../assets/Image_Project/boAt.png'
+import figmaDesign from '../assets/Image_Project/figmaDesign.png'
+import netfilx from '../assets/Image_Project/netflix.png'
+
 const projects = [
     {
         id: 1,
         title: 'Netflix Clone',
         description: 'A responsive Netflix clone built with React.js, featuring smooth UI and dynamic content from a movie API.',
-        image: './public/Image_Project/netflix-clone.png',
+        image: netfilx,
         tags: ['React.js', 'JavaScript', 'HTML', 'Css', 'Bootstrap'],
         demoURL: '',
         githubURL: 'https://github.com/Darshankyada2003/netfilx-clone'
@@ -24,7 +28,7 @@ const projects = [
         id: 3,
         title: 'FigmaDesign',
         description: 'Built a pixel-perfect responsive webpage from Figma using React.js, Tailwind CSS, and a scalable component-based architecture.',
-        image: './public/Image_Project/figmaDesign.png',
+        image: figmaDesign,
         tags: ['React.js', 'JavaScript', 'HTML', 'Tailwind CSS', 'Bootstrap'],
         demoURL: '',
         githubURL: 'https://github.com/Darshankyada2003/FigmaDesign'
@@ -33,7 +37,7 @@ const projects = [
         id: 4,
         title: 'boAt',
         description: 'Modern boAt-inspired UI with vibrant visuals, carousels, and a responsive layout for a bold, seamless shopping experience.',
-        image: './public/Image_Project/boAt.png',
+        image: boat,
         tags: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
         demoURL: 'https://boat-lyart.vercel.app/',
         githubURL: 'https://github.com/Darshankyada2003/boAt'
@@ -63,7 +67,7 @@ const ProjectSection = () => {
                             <div className='p-6'>
                                 <div className='flex flex-wrap gap-2 mb-4'>
                                     {project.tags.map((tag) => (
-                                        <span className='px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground'>
+                                        <span key={tag} className='px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground'>
                                             {tag}
                                         </span>
                                     ))}

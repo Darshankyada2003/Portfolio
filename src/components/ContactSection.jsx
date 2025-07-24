@@ -58,7 +58,7 @@ const ContactSection = () => {
                             <h4 className='font-medium mb-4'>Connect With Me</h4>
                             <div className='flex space-x-4 justify-center'>
                                 <a
-                                    href="https://www.linkedin.com/in/darshan-kyada-b075b92b6"
+                                    href="https://www.linkedin.com/in/darshan-kyada/"
                                     target='_blank'
                                 >
                                     <Linkedin />
@@ -77,7 +77,15 @@ const ContactSection = () => {
                     </div>
                     <div className='bg-card p-8 rounded-lg shadow-xs'>
                         <h3 className='text-2xl font-semibold mb-6'>Send a Message</h3>
-                        <form action="" className='space-y-6'>
+                        <form
+                            action="https://formspree.io/f/xpwlpedd"
+                            method='POST'
+                            className='space-y-6'
+                        >
+                            {/* Hidden: custom subject and thank-you redirect */}
+                            <input type="hidden" name="_subject" value="New message from portfolio contact form" />
+                            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+
                             <div>
                                 <label htmlFor="name" className='block text-sm font-medium mb-2'>Your Name</label>
                                 <input
@@ -89,6 +97,7 @@ const ContactSection = () => {
                                     placeholder='Darshan...'
                                 />
                             </div>
+
                             <div>
                                 <label htmlFor="email" className='block text-sm font-medium mb-2'>Your Email</label>
                                 <input
@@ -100,6 +109,7 @@ const ContactSection = () => {
                                     placeholder='hello@gmail.com'
                                 />
                             </div>
+
                             <div>
                                 <label htmlFor="message" className='block text-sm font-medium mb-2'>Your Message</label>
                                 <textarea
@@ -110,10 +120,11 @@ const ContactSection = () => {
                                     placeholder="Hello, I'd like to talk about..."
                                 />
                             </div>
+
                             <button
                                 type='submit'
-                                className={cn('cosmic-button w-full flex items-center justify-center gap-2'
-                                )}>
+                                className={cn('cosmic-button w-full flex items-center justify-center gap-2')}
+                            >
                                 Send Message
                                 <Send size={16} />
                             </button>
@@ -121,7 +132,6 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-
         </section>
     )
 }
